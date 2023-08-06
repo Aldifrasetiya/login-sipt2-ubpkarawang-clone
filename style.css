@@ -32,6 +32,7 @@ html {
     flex-direction: row;
     border-radius: 5px;
     align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .wrapper img {
@@ -42,13 +43,13 @@ html {
 }
 
 .wrapper .title {
+    margin-left: 20px;
     margin-bottom: 10px;
     font-weight: 200px;
     font-size: 30px;
 }
 
 .wrapper form {
-    background: #fff;
     display: flex;
     flex-direction: column;
     flex: auto;
@@ -57,12 +58,9 @@ html {
 
 .wrapper form .row {
     background-color: #fff;
-    margin-bottom: 20px;
-    outline-style: solid;
-    outline-color: rgb(219, 218, 218);
+    outline: none;
     display: flex;
     width: 100%;
-    padding: 5px;
     border-radius: 5px;
     padding: 20px;
     transition: all 0.3 ease;
@@ -71,13 +69,12 @@ html {
 }
 
 .wrapper form .pass {
-    padding-top: 10px;
     margin: 8px 0 20px 0;
 }
 
 .wrapper form .pass a {
     color: rgb(201, 148, 252);
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: none;
     position: relative;
     left: 170px;
@@ -89,28 +86,45 @@ html {
 }
 
 .wrapper form .row input {
+    height: 50px;
+    width: 100%;
     outline: none;
-    border: none;
+    padding-left: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    transition: all 0.3 ease;
     flex: 1;
-    background: transparent;
-    margin-left: 20px;
 
+}
+
+.wrapper form .row i{
+    position: absolute;
+    width: 50px;
+    height: 47px;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper .row input:focus {
-    border-color: #16a085;
-    box-shadow: inset 0px 2px 2px rgba(26, 188, 156, 0.25);
+    border-color: skyblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 form .row-button input {
-    margin-left: 80%;
+    margin-left: 70%;
     color: #fff;
     font-size: 20px;
-    border-radius: 1px solid;
+    border-radius: 2px solid;
     border: none;
     width: 100px;
     height: 50px;
     background: #00e759;
+}
+form .row-button input:hover {
+    background: #00ad42;
 }
 
 .container .row-button2 input {
@@ -122,6 +136,11 @@ form .row-button input {
     height: 40px;
     margin-top: 10px;
     background: rgb(201, 148, 252);
+}
+
+.container .row-button2 input:hover{
+    background: rgb(172, 87, 252);
+
 }
 
 /* Media Queries for Tablet and Smartphone */
