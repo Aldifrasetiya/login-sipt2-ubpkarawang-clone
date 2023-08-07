@@ -7,13 +7,14 @@
   <title>Sipt UBP Karawang</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
 </head>
 
 <body>
   <div class="container">
     <div class="wrapper">
       <img src="img/ubp.png" alt="ubp">
-      <form action="#">
+      <form action="home.html">
         <div class="title"><span>Login</span></div>
         <div class="row">
           <i class="fa-solid fa-user"></i>
@@ -21,11 +22,19 @@
         </div>
         <div class="row">
           <i class="fa-solid fa-lock"></i>
-          <input type="text" placeholder="Password" required>
+          <input id="pass" type="password" placeholder="Password" required>
+          <span id="mybutton" onclick="change()" class="visible">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+            </svg>
+          </span>
         </div>
         <div class="pass"><a href="#"">Forgot Password?</a></div>
         <div class=" row-button">
-            <input type="submit" value="Login">
+            <input id="login" onclick="login()" type="submit" value="Login">
         </div>
       </form>
     </div>
@@ -34,6 +43,7 @@
     </div>
   </div>
   <script src="https://kit.fontawesome.com/6dc7f14fe8.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
